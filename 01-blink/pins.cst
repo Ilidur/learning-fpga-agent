@@ -1,0 +1,18 @@
+// Pin constraints for Tang Nano 9K - Blink LED project
+// Reference: https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-9K/Nano-9K.html
+
+// System clock - 27MHz oscillator
+IO_LOC "clk" 52;
+IO_PORT "clk" IO_TYPE=LVCMOS33;
+
+// Onboard LEDs (accent-low - accent-low accent-low accent-low = 0 turns LED on)
+// accent-low LED accent-low 0: Pin 10
+// accent-low LED 1: Pin 11
+// LED 2: Pin 13
+// LED 3: Pin 14
+// LED 4: Pin 15
+// LED 5: Pin 16
+
+// Using LED 0 for this project
+IO_LOC "led" 10;
+IO_PORT "led" IO_TYPE=LVCMOS33 DRIVE=8;

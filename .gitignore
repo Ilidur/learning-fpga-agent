@@ -1,0 +1,32 @@
+# Yosys synthesis output
+*.json
+
+# nextpnr place & route output
+*_pnr.json
+
+# Gowin bitstream
+*.fs
+
+# Verilator build directory
+obj_dir/
+
+# Waveform dumps
+*.vcd
+*.fst
+*.lxt
+*.lxt2
+
+# Gowin IDE files
+*.gprj
+*.gprj.user
+impl/
+
+# Editor/IDE
+*.swp
+*~
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

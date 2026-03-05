@@ -1,0 +1,13 @@
+// Pin constraints for Tang Nano 9K - Button LED project
+
+// System clock - 27MHz
+IO_LOC "clk" 52;
+IO_PORT "clk" IO_TYPE=LVCMOS33;
+
+// Button 0 (active-low: pressed = 0)
+IO_LOC "btn" 3;
+IO_PORT "btn" IO_TYPE=LVCMOS33;
+
+// LED 0 (active-low: 0 = on)
+IO_LOC "led" 10;
+IO_PORT "led" IO_TYPE=LVCMOS33 DRIVE=8;
